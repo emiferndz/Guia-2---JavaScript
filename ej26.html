@@ -1,0 +1,33 @@
+<!-- 
+Emiliano Fernández
+6to "B"
+emilianofernandez@colegiodesanjose.edu.ar
+
+Ejercicio 26:
+Realizar un programa en Java script que permita ingresar al usuario el nombre de una
+palabra. En el caso que la persona ingrese “let”, ”if” ó ”else” informar que se trata de
+una palabra clave o también que no lo es.
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Guia 2 javascript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+    var palabra = prompt("Ingrese una palabra: ");
+
+    if (palabra === "let" || palabra === "if" || palabra === "else"){
+        document.write("Esta palabra se trata de una palabra clave")
+    } else{
+        document.write("Esta palabra no se trata de una palabra clave")
+    }
+    </script>
+</body>

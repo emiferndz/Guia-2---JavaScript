@@ -1,0 +1,47 @@
+<!-- 
+Emiliano Fernández
+6to "B"
+emilianofernandez@colegiodesanjose.edu.ar
+
+Ejercicio 18: Confeccionar un programa que muestre la cantidad de horas que tiene un día, la
+cantidad de minutos y la cantidad de segundos.
+La cantidad de días se ingresa por teclado. 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Guia 2 javascript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        var dia = parseInt(prompt("Ingrese la cantidad de días: "));
+        
+        var horas = 24;
+        var minutos = 1440;
+        var segundos = 86400;
+
+        if (dia == 1) {
+            document.write("La cantidad de horas son: ",horas,"<br>");         
+            document.write("La cantidad de minutos son: ",minutos,"<br>");
+            document.write("La cantidad de segundos son: ",segundos);
+        }
+
+        else {
+            horas = (horas * dia);
+            minutos = (minutos * dia);
+            segundos = (segundos * dia);
+
+            document.write("La cantidad de horas son: ",horas);
+            document.write("La cantidad de minutos son: ",minutos);
+            document.write("La cantidad de segundos son: ",segundos);
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!-- 
+Emiliano Fernández
+6to "B"
+emilianofernandez@colegiodesanjose.edu.ar
+
+Ejercicio 20:
+Ingresar por teclado el nombre de alguno de estos tres diarios de la república
+Argentina y redireccionar la página según corresponda al diario cargado.
+(Utilizar el comando “location.href”)
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Guia 2 javascript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+      var pagina = (prompt("Ingrese el nombre de alguno de estos diarios; Clarín, Nación, La Voz."));
+
+      if (pagina === "Clarin" || "Clarín" || "clarín" || "clarin") {
+        location.href="https://www.clarin.com"
+      }
+      if (pagina === "Nación" || "Nacion" || "nación" || "nacion") {
+        location.href="https://www.lanacion.com"
+      }
+      if (pagina === "La voz" || "la voz") {
+        location.href="https://www.lavoz.com.ar"
+      }
+      
+    </script>
+</body>
